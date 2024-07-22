@@ -12,7 +12,8 @@ ENV PYTHONPATH=.
 
 COPY requirements.txt /home/requirements.txt
 COPY meme_search /home/meme_search
-COPY data/dbs /home/init
+COPY data/dbs /home/init/dbs
+COPY data/input /home/init/input
 COPY .streamlit /home/.streamlit
 
 RUN pip3 install -r /home/requirements.txt

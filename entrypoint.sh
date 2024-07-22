@@ -2,7 +2,7 @@
 
 # Check if database is empty, if so, copy the init files
 if [ -z "$(ls -A /home/data/dbs)" ]; then
-	cp -r /home/init/* /home/data/dbs
+	cp -r /home/init/* /home/data/
 fi
 
 # Start the streamlit app
